@@ -1,0 +1,10 @@
+﻿  Project Module 3.cpp
+C:\Users\migue\OneDrive - SNHU\CS-210\Project CS210\Project Module 3.cpp(37,9): warning C4101: 'minConv': unreferenced local variable
+C:\Users\migue\OneDrive - SNHU\CS-210\Project CS210\Project Module 3.cpp(38,9): warning C4101: 'secConv': unreferenced local variable
+C:\Users\migue\OneDrive - SNHU\CS-210\Project CS210\Project Module 3.cpp(93,54): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\migue\OneDrive - SNHU\CS-210\Project CS210\Project Module 3.cpp(94,55): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\migue\OneDrive - SNHU\CS-210\Project CS210\Project Module 3.cpp(109,21): warning C4552: '!': result of expression not used
+C:\Users\migue\OneDrive - SNHU\CS-210\Project CS210\Project Module 3.cpp(113,21): warning C4552: '!': result of expression not used
+C:\Users\migue\OneDrive - SNHU\CS-210\Project CS210\Project Module 3.cpp(117,21): warning C4552: '!': result of expression not used
+C:\Users\migue\OneDrive - SNHU\CS-210\Project CS210\Project Module 3.cpp(121,21): warning C4552: '!': result of expression not used
+  Project CS210.vcxproj -> C:\Users\migue\OneDrive - SNHU\CS-210\x64\Debug\Project CS210.exe

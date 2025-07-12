@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Calculator",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-g",
+        "main.cpp",
+        "-o",
+        "Calculator.exe"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}

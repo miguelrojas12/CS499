@@ -1,0 +1,44 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compile SQLite3",
+      "type": "shell",
+      "command": "gcc",
+      "args": [
+        "-c",
+        "C:/sqlite/sqlite3.c",
+        "-o",
+        "C:/Projects/Enhanced-Clock/build/sqlite3.o"
+      ],
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      }
+    },
+    {
+      "label": "Build Clock Project",
+      "type": "shell",
+      "dependsOn": ["Compile SQLite3"],
+      "command": "g++",
+      "args": [
+        "-g",
+        "-I", "C:/Projects/Enhanced-Clock/include",
+        "-I", "C:/sqlite/include",
+        "C:/Projects/Enhanced-Clock/src/main.cpp",
+        "C:/Projects/Enhanced-Clock/src/clock_engine.cpp",
+        "C:/Projects/Enhanced-Clock/src/input_parser.cpp",
+        "C:/Projects/Enhanced-Clock/src/timezone_db.cpp",
+        "C:/Projects/Enhanced-Clock/src/display.cpp",
+        "C:/Projects/Enhanced-Clock/build/sqlite3.o",  // Link against compiled SQLite
+        "-o", "C:/Projects/Enhanced-Clock/x64/ProjectCS210Clock.exe"
+      ],
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}

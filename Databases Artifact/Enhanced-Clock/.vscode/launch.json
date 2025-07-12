@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Clock Project",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/x64/ProjectCS210Clock.exe",  // Path to your compiled executable
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",                                 // Current working directory
+      "environment": [],
+      "externalConsole": true,                                     // Launches in separate command window
+      "MIMode": "gdb",                                              // Debugging mode for MinGW
+      "miDebuggerPath": "C:/MinGW/mingw32/bin/gdb.exe",            // Adjust if your gdb.exe is elsewhere
+      "setupCommands": [
+        {
+          "description": "Enable pretty printing",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
